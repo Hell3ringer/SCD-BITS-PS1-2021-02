@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+      function modelDropDownFunction() {
+        document.getElementById('modelDropDown').classList.toggle('show');
+      }
+      function sampIntDropDownFunction() {
+        document.getElementById('sampIntDropDown').classList.toggle('show');
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName('dropdown-content');
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      };
+    </script>
+    <title>REMO Gateaway Master</title>
+  </head>
+  <body>
+    <table class="menu-bar">
+      <tr>
+        <th>Model</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Samp Int</th>
+        <th colspan="2">Actions</th>
+      </tr>
+      <tr>
+        <td>
+          <div class="dropdown">
+            <button onclick="modelDropDownFunction()" class="dropbtn">
+              Model &nbsp;<i class="fa fa-caret-down fa-1x"></i>
+            </button>
+            <div id="modelDropDown" class="dropdown-content">
+              <a href="#model1">model1</a>
+              <a href="#model2">model2</a>
+              <a href="#model3">model3</a>
+            </div>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+        <td>
+          <div class="dropdown">
+            <button onclick="sampIntDropDownFunction()" class="dropbtn">
+              Samp Int &nbsp;<i class="fa fa-caret-down fa-1x"></i>
+            </button>
+            <div id="sampIntDropDown" class="dropdown-content">
+              <a href="#sampInt1">sampInt1</a>
+              <a href="#sampInt2">sampInt2</a>
+              <a href="#sampInt3">sampInt3</a>
+            </div>
+          </div>
+        </td>
+        <td><i class="fa fa-pencil fa-2x"></i></td>
+        <td><i class="fa fa-trash fa-2x"></i></td>
+      </tr>
+    </table>
+  </body>
+</html>

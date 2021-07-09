@@ -23,12 +23,19 @@
 
 }
 .box .row.menu {
-    
-    text-align: center;    
+    display: flex;
+    justify-content: space-between;  
+    text-align: center;   
+    padding: 10px;
     height: 3rem;
     background-color:rgb(88 88 238);
     color: white;
+
+    
+    
 }
+
+
 .box .row.status {
     display: flex;
     justify-content: space-between;    
