@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    
     <script>
       /* When the user clicks on the button, 
         toggle between hiding and showing the dropdown content */
@@ -36,6 +36,9 @@
     <title>REMO Gateaway Master</title>
   </head>
   <body>
+    <h1>
+      Gateway Master
+    </h1>
     <table class="menu-bar">
       <tr>
         <th>Model</th>
@@ -47,7 +50,7 @@
       <tr>
         <td>
           <div class="dropdown">
-            <button onclick="modelDropDownFunction()" class="dropbtn">
+            <button  (click)="modelDropdown()" class="dropbtn">
               Model &nbsp;<i class="fa fa-caret-down fa-1x"></i>
             </button>
             <div id="modelDropDown" class="dropdown-content">
@@ -61,7 +64,7 @@
         <td></td>
         <td>
           <div class="dropdown">
-            <button onclick="sampIntDropDownFunction()" class="dropbtn">
+            <button  (click)="sampIntDropdown()" class="dropbtn">
               Samp Int &nbsp;<i class="fa fa-caret-down fa-1x"></i>
             </button>
             <div id="sampIntDropDown" class="dropdown-content">
