@@ -1,0 +1,66 @@
+.box{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    min-height: 99vh;
+    margin: 0;
+    
+    
+}
+.box .row {
+    border: 1px solid black;
+}
+
+.box .row.banner {
+    
+    height: 200px;    
+    
+    text-align: center;
+    justify-content: center;
+    
+    background-color:rgb(88 88 238);
+    color: white; 
+
+}
+.box .row.menu {
+    display: flex;
+    justify-content: space-between;  
+    text-align: center;   
+    padding: 10px;
+    height: 3rem;
+    background-color:rgb(88 88 238);
+    color: white;
+
+    
+    
+}
+
+
+.box .row.status {
+    display: flex;
+    justify-content: space-between;    
+    background-color:bisque;    
+    
+    padding: 10px;
+    
+    
+}
+
+.box .row.client {
+    
+    border: 2px solid black;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center ;
+    font-style: italic;
+    
+
+}
+
+
+.box .row.footer {       
+    text-align: center;        
+    background-color:rgb(88 88 238);
+    color: white;
+
+}
